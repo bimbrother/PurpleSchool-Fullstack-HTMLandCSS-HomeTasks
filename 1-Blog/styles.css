@@ -1,0 +1,104 @@
+body.bg {
+	background-color: white;
+	background-image: linear-gradient(hsla(217, 19%, 27%, 1), hsla(221, 39%, 11%, 1));
+	background-repeat: no-repeat;
+}
+
+div.content {
+	margin: 0px 75px;
+	background-color: red;
+}
+
+.header {}
+
+div.logo {
+	display: inline-block;
+}
+
+div.post {
+	display: flex;
+	flex-direction: column;
+}
+
+div.logoicon {
+	width: 35px;
+	height: 35px;
+	background-color: hsla(215, 14%, 34%, 1);
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+}
+
+div.search {
+	width: 120px;
+	display: inline-block;
+	margin-left: auto;
+	margin-right: 0;
+}
+
+input.searchinput {}
+
+div.logotext {
+	display: inline-block;
+}
+
+div.posttype {
+	text-transform: uppercase;
+	display: inline-block;
+}
+
+div.separateddot {
+	display: inline-block;
+}
+
+div.postdate {
+	display: inline-block;
+}
+
+div.postmeta {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: beige;
+}
+
+div.menu {
+	display: inline-block;
+}
+
+.menuitem {
+	background-color: aqua;
+	display: inline-block;
+}
+
+/* User */
+
+div.user {
+	margin-top: 20px;
+}
+
+img.userphoto {
+	width: 50px;
+	height: 50px;
+}
+
+div.photo {
+	display: inline-block;
+}
+
+div.userinfo {
+	display: inline-block;
+}
+
+/* /User */
+
+div.postmainimg_container {
+	padding-left: 110px;
+	padding-right: 110px;
+	background-color: blue;
+}
+
+div.postmainimg_container img {
+	max-width: 100%;
+}

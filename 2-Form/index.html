@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Register</title>
+</head>
+
+<body>
+	<main>
+		<section>
+			<form action="#">
+				<div style="width: 400px; border: solid 1px gray; padding: 20px;">
+					<h1>Регистрация</h1>
+					<div>
+						Уже есть аккаунт? <a href="#">Войти</a>
+					</div>
+					<div style="display: flex; flex-direction: column; margin: 10px 0;">
+						<label for="companyname">Компания</label>
+						<input type="text" id="companyname" name="company" value="Мой компания"
+							placeholder="Компания" />
+					</div>
+					<div style="display: flex; flex-direction: row; margin: 10px 0;">
+						<div style="display: flex; flex-direction: column;">
+							<label for="firstname">Имя</label>
+							<input type="text" name="firstname" id="firstname" placeholder="Имя" required />
+						</div>
+						<div style="display: flex; flex-direction: column;">
+							<label for="lastname">Фамилия</label>
+							<input type="text" name="lastname" id="lastname" placeholder="Фамилия" required />
+						</div>
+					</div>
+					<div style="display: flex; flex-direction: column; margin: 10px 0;">
+						<label for="email">E-mail</label>
+						<input type="text" name="email" id="email" placeholder="E-mail" required
+							pattern="[A-z0-9-\.]{1,}@[A-z0-9-\.]{1,}\.[A-z]{1,}" />
+					</div>
+					<div style="margin: 10px 0;">
+						<button style="width: 100%;">Зарегистрироваться</button>
+					</div>
+					<div>
+						<input type="checkbox" name="termsofuse" id="termsofuse" required />
+						<label for="termsofuse">Я прочитал и принимаю <a href="#">Условия использования</a></label>
+					</div>
+				</div>
+			</form>
+		</section>
+	</main>
+</body>
+
+</html>
