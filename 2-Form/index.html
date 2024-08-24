@@ -4,45 +4,44 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./styles.css">
 	<title>Register</title>
 </head>
 
 <body>
 	<main>
-		<section>
-			<form action="#">
-				<div style="width: 400px; border: solid 1px gray; padding: 20px;">
-					<h1>Регистрация</h1>
-					<div>
-						Уже есть аккаунт? <a href="#">Войти</a>
-					</div>
-					<div style="display: flex; flex-direction: column; margin: 10px 0;">
-						<label for="companyname">Компания</label>
-						<input type="text" id="companyname" name="company" value="Мой компания"
-							placeholder="Компания" />
-					</div>
-					<div style="display: flex; flex-direction: row; margin: 10px 0;">
-						<div style="display: flex; flex-direction: column;">
-							<label for="firstname">Имя</label>
-							<input type="text" name="firstname" id="firstname" placeholder="Имя" required />
+		<section class="dialog">
+			<div class="header-block">
+				<h1>Регистрация</h1>
+				<p>Уже есть аккаунт?&nbsp;&nbsp;&nbsp;<a href="">Войти</a></p>
+			</div>
+			<form action="#" class="register-form">
+				<div>
+					<input type="text" id="company" name="company" placeholder="Компания" value="Мой компания">
+				</div>
+				<div class="first-last-name">
+					<input type="text" id="first-name" name="firs-tname" placeholder="Имя" class="first-name">
+					<input type="text" id="last-name" name="last-name" placeholder="Фамилия" class="last-name">
+				</div>
+				<div>
+					<input type="email" id="email" name="email" placeholder="E-mail">
+				</div>
+				<div>
+					<button>
+						<div class="button-img-place"></div>
+						<div class="button-content">Зарегистрироваться</div>
+						<div class="button-img-place">
+							<img src="./img/arrow.svg" alt="Go">
 						</div>
-						<div style="display: flex; flex-direction: column;">
-							<label for="lastname">Фамилия</label>
-							<input type="text" name="lastname" id="lastname" placeholder="Фамилия" required />
-						</div>
-					</div>
-					<div style="display: flex; flex-direction: column; margin: 10px 0;">
-						<label for="email">E-mail</label>
-						<input type="text" name="email" id="email" placeholder="E-mail" required
-							pattern="[A-z0-9-\.]{1,}@[A-z0-9-\.]{1,}\.[A-z]{1,}" />
-					</div>
-					<div style="margin: 10px 0;">
-						<button style="width: 100%;">Зарегистрироваться</button>
-					</div>
-					<div>
-						<input type="checkbox" name="termsofuse" id="termsofuse" required />
-						<label for="termsofuse">Я прочитал и принимаю <a href="#">Условия использования</a></label>
-					</div>
+
+
+					</button>
+				</div>
+				<div>
+					<label class="custom-checkbox">
+						<input type="checkbox" class="checkbox-custom" id="rules">
+						Я прочитал и принимаю&nbsp;&nbsp;<a href="#">Условия пользования</a>
+					</label>
 				</div>
 			</form>
 		</section>

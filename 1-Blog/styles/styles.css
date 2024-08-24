@@ -1,40 +1,8 @@
-@font-face {
-	font-family: 'Roboto';
-	src: url('Roboto-ThinItalic-webfont.eot');
-	src: url('Roboto-ThinItalic-webfont.eot?#iefix') format('embedded-opentype'),
-		url('Roboto-ThinItalic-webfont.woff') format('woff'),
-		url('Roboto-ThinItalic-webfont.ttf') format('truetype'),
-		url('Roboto-ThinItalic-webfont.svg#RobotoThinItalic') format('svg');
-	font-weight: 200;
-	font-style: italic;
-}
-
-@font-face {
-	font-family: 'Source Sans Pro';
-	font-style: normal;
-	font-weight: 300;
-	src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v7/toadOcfmlt9b38dHJxOBGNbE_oMaV8t2eFeISPpzbdE.woff) format('woff');
-}
-
-@font-face {
-	font-family: 'Source Sans Pro';
-	font-style: normal;
-	font-weight: 400;
-	src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v7/ODelI1aHBYDBqgeIAH2zlBM0YzuT7MdOe03otPbuUS0.woff) format('woff');
-}
-
-@font-face {
-	font-family: 'Source Sans Pro';
-	font-style: normal;
-	font-weight: 700;
-	src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v7/toadOcfmlt9b38dHJxOBGFkQc6VGVFSmCnC_l7QZG60.woff) format('woff');
-}
-
-@font-face {
-	font-family: 'Source Sans Pro';
-	font-style: italic;
-	font-weight: 400;
-	src: local('Source Sans Pro Italic'), local('SourceSansPro-It'), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v7/M2Jd71oPJhLKp0zdtTvoMzNrcjQuD0pTu1za2FULaMs.woff) format('woff');
+* {
+	margin-inline: 0;
+	padding-inline: 0;
+	margin-block: 0;
+	box-sizing: border-box;
 }
 
 body {
@@ -43,27 +11,31 @@ body {
 	background-repeat: no-repeat;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
-	font-size: 20px;
+	font-size: 16px;
 	line-height: 32px;
 	color: rgba(255, 255, 255, 1);
 }
 
-.content {
-	width: 1080px;
-	margin: 0 auto;
-}
+
+
 
 /* Header: logo, navigation and search*/
 
 header {
-	margin-top: 72px;
+	height: 180px;
+	width: 1180px;
 	display: flex;
-	flex-direction: row;
+	align-items: center;
+	margin: 0 auto;
+	justify-items: stretch;
 }
+
+
 
 .logo {
 	display: flex;
-	flex-direction: row;
+	align-items: center;
+	gap: 11px;
 }
 
 .logo-icon {
@@ -71,37 +43,35 @@ header {
 	height: 35px;
 	background-color: rgba(75, 85, 99, 1);
 	border-radius: 3px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .logo-icon>p {
 	font-size: 18px;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 700;
-	margin: auto auto;
-	width: fit-content;
-	line-height: 35px;
+	height: fit-content;
+	line-height: 18px;
 }
 
 .logo-icon+p {
 	font-size: 18px;
 	line-height: 21px;
-	margin: 7px 11px;
 }
 
 nav {
-	margin: 0 70px;
+	margin: 0 0 0 77px;
 }
 
 nav ul {
 	display: flex;
-	flex-direction: row;
-	margin: 0 auto;
-	;
+	gap: 40px;
 }
 
 nav li {
 	list-style-type: none;
-	margin: 0 26px;
 }
 
 nav a {
@@ -111,15 +81,9 @@ nav a {
 }
 
 .search-form {
-	border-radius: 100px;
 	width: 224px;
-	height: 40px;
-	background-color: rgba(31, 41, 55, 0.6);
-	margin-left: auto;
-	margin-right: 0;
 	display: flex;
-	flex-direction: row;
-	padding-right: 16px;
+	margin-left: auto;
 }
 
 .search-button {
@@ -130,6 +94,7 @@ nav a {
 	margin: 13px 18px;
 	/* border: solid 1px black; */
 	padding: 0;
+	position: absolute;
 }
 
 .search-button img {
@@ -140,10 +105,13 @@ nav a {
 
 
 .search-input {
-	background: none;
+	border-radius: 100px;
+	height: 40px;
+	background-color: rgba(31, 41, 55, 0.6);
 	border: 0;
-	margin: auto 20px auto 0;
+	padding: 11px 20px 11px 50px;
 	font-size: 16px;
+	line-height: 18;
 	color: rgba(255, 255, 255, 0.6);
 }
 
@@ -160,7 +128,8 @@ nav a {
 /* Main */
 
 main {
-	margin-top: 70px;
+	width: 1080px;
+	margin: 0 auto;
 }
 
 .post-info {
@@ -251,9 +220,13 @@ h1 {
 footer {
 	font-size: 16px;
 	color: rgba(255, 255, 255, 0.6);
+	height: 200px;
+	display: flex;
+	align-items: center;
 }
 
 footer>p {
+	line-height: 28px;
 	width: fit-content;
-	margin: 80px auto;
+	margin: 0 auto;
 }
